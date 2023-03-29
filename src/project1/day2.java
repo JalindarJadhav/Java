@@ -5,108 +5,106 @@ public class day2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String firstName = "I am learning selenium";
-		System.out.println(firstName);
-		//System.out.println(firstName[0]);
-		
-		// String +  Integer =====> String 
-		// Integer + String  =====> String 
-		// String  + String  =====> String 
+		String tagName = "I am learning selinium";
+		System.out.println(tagName);
+
+		// String + Integer =====> String
+		// Integer + String =====> String
+		// String + String =====> String
 		// Integer + Integer ====> Integer
-		
-		System.out.println("Hello"+2);  // "Hello2"
-		System.out.println("2"+2);  // "22"
-		System.out.println(4+2);  // 6
-		System.out.println("5"+"66");  // 566
-		
-		// Methods
-		
-		String firstName2 = "rohan";
-		int q1 = firstName2.length();
-		System.out.println(q1);
-		
-		
-		// program3
-		
-		String firstName3 = "poorva";
-		String lastName3 = "vyas";
-		String  q2 = firstName3.concat(lastName3);
-		System.out.println(q2);
-		System.out.println(firstName3+lastName3);
-			
+
+		// program 1
+		System.out.println("Jalindar" + 781);
+		System.out.println(781 + "Jalu");
+		System.out.println("Jalindar" + "Jadhav");
+		System.out.println(500 + 500);
+
+		// program 2
+		String firstName = "Jalindar";
+		int fl = firstName.length();
+		System.out.println(fl);
+
+		// program 3
+		// concat
+		String firstNameB = "Jalindar";
+		String lastName = "Jadhav";
+
+		String fullName = firstName.concat(lastName);
+		System.out.println(fullName);
+
+		System.out.println(firstNameB + lastName);
+
 		// program 4
-		
-		String city  = new String("pune");
+		String city = new String("Sinnar");
 		System.out.println(city);
-		
+
 		// program 5
-		
-		String city2 = "Nagpur";
-		String q21  = city2.toUpperCase();
-		System.out.println(q21);
-		
+		String city2 = "nagpur";
+		String a1 = city2.toUpperCase();
+		System.out.println(a1);
+
 		// program 6
-		
-		String city3 = "Wardha";
-		String q22 = city3.toLowerCase();
-		System.out.println(q22);
-		
-		// Method chaining
-		
-		String city4 = "Jaipur";
-		city4.toUpperCase().toLowerCase().length();
-		// "JAIPUR".toLowerCase() ====> "jaipur".length()===>6.toUpperCase()
-		
+		String city3 = "PUNE";
+		String b1 = city3.toLowerCase();
+		System.out.println(b1);
+
 		// program 7
-		
-		String city5 = "pune";
-		String city6 = "pune";
-		String city7 = "mumbai";
-		
-		System.out.println(city5.equals(city7));
+		String city4 = "Kopargoan";
+		String city5 = "Kopargoan";
+		String city6 = "Sangamner";
+
+		// equals
+		System.out.println(city4.equals(city5));
 		System.out.println(city5.equals(city6));
-		
-//		if(city5.equals(city6)) {
-//			System.out.println("same city");
-//		}
-//		else {
-//			System.out.println("diffent city");
-//		}
-		
-//		if(city5.equalsIgnoreCase(city6)) {
-//			System.out.println("same city");
-//		}
-//		else {
-//			System.out.println("diffent city");
-//		}
-		
-		String a = city5.equals(city7) ? "equal":"not equal";
-		System.out.println(a);
-		
-		
-		// Program 8
-		
-		String city8 = "ujjain";
-		boolean q33 = city8.startsWith("u");
-		boolean q34 = city8.startsWith("Ujj");
-		System.out.println(q33);
-		System.out.println(q34);
-		
-		// program 9
-		
-		String city9 = "delhi";
-		boolean q333 = city9.endsWith("i");
-		boolean q344 = city9.endsWith("hi");
-		System.out.println(q333);
-		System.out.println(q344);
-		
 
+		if (city4.equals(city5)) {
+			System.out.println("Equal city");
+		} else {
+			System.out.println("Diffrent city");
+		}
+		// ans is Equal city
+
+		if (city5.equalsIgnoreCase(city6)) {
+			System.out.println("Same city");
+		} else {
+			System.out.println("Diffrent city");
+		}
+
+		// ternary operator
+		String c1 = city4.equals(city5) ? "equals" : "Not equals";
+		System.out.println(c1);
+
+		String d1 = city4.equals(city6) ? "equals" : "Not equals";
+		System.out.println(d1);
+
+		// program 8
+		// startsWith
+ 
+		String city7="Nashik";
+		Boolean a11=city7.startsWith("na");
+		Boolean a22=city7.startsWith("Na");
+	
+		System.out.println(a11);
+		System.out.println(a22);
 		
-		// program 10
-		String j = "I am learning java";
-		boolean q55 = j.contains("am");
-		System.out.println(q55);
+		//endsWith
+		String city8="Sinnar";
+		Boolean a33=city8.endsWith("aar");
+		Boolean a44=city8.endsWith("nnar");
+				
 		
+		
+		System.out.println(a33);
+		System.out.println(a44);
+		
+		
+		
+		String headOne="I am learning Java";
+		Boolean b11=headOne.contains("Java");
+		System.out.println(b11);
+		
+		Boolean b22=headOne.contains("Jalindar");
+		System.out.println(b22);
+	
 	}
-
 }

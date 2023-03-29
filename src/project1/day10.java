@@ -8,8 +8,8 @@ public class day10 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String a = "Poorva";
-		//["P","o","o","r","v" ,"a"]
+		String a = "Jalindar";
+		//["J","a","l","i","n" ,"d","a","r"]
 	     char [] aa =	a.toCharArray();
 	     for(char a1:aa) {
 	    	 System.out.println(a1);
@@ -19,7 +19,7 @@ public class day10 {
 	     // numT > 0 && numT <= 5   ===>  10 %discount
 	     // numT > 5 && numT <= 10   ===> 20 %discount
 	     // numT > 10   ===>  30 % discount
-	     
+	    
 	     int numT = 5;
 	     if(numT > 0 && numT <= 5) {
 	    	 System.out.println("10% discount");
@@ -282,3 +282,11 @@ public class day10 {
 	}
 
 }
+
+
+//
+//git add README.md
+//git commit -m "first commit"
+//git branch -M main
+//git remote add origin https://github.com/JalindarJadhav/Java.git
+//git push -u origin main
